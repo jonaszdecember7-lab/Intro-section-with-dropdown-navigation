@@ -1,0 +1,204 @@
+    @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+    body {
+        font-family: 'Epilogue', Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        min-height: 100vh;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        flex: 1;
+    }
+
+    h1 {
+        font-size: 70px;
+        margin: 0;
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    a {
+        color: hsl(0, 0%, 41%);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: hsl(0, 0%, 8%);
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px;
+        align-items: center;
+    }
+
+
+    .login-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #register {
+        border: 2px solid hsl(0, 0%, 41%);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #register:hover {
+        border: 2px solid hsl(0, 0%, 8%);
+
+    }
+
+    .main-info-area {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header p {
+        margin: 0;
+    }
+
+    p {
+        max-width: 450px;
+        line-height: 1.5;
+        margin: 50px 0;
+        color: hsl(0, 0%, 41%);
+    }
+
+    .dropdown {
+        max-width: 450px;
+        color: hsl(0, 0%, 41%);
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        font-family: 'Epilogue', Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .dropdown:hover {
+        cursor: pointer;
+        color: hsl(0, 0%, 8%);
+    }
+
+    .dropdown-menu {
+        display: flex;
+        position: absolute;
+        background-color: white;
+        flex-direction: column;
+        top: 100px;
+        gap: 15px;
+        box-shadow: 1px 1px 15px -5px;
+        padding: 20px;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .dropdown-menu.active {
+        display: flex;
+    }
+
+    .dropdown .dropdown-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+    }
+
+    #features-menu {
+        left: 125px;
+    }
+
+    .dropdown-item {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        width: 100px;
+    }
+
+    .down-arrow {
+        height: 7px;
+        width: auto;
+        align-self: center;
+        transition: transform 0.3s;
+    }
+
+    .dropdown.open .down-arrow {
+        transform: rotate(180deg);
+    }
+
+    #learn-more {
+        width: 150px;
+        height: 45px;
+        background-color: hsl(0, 0%, 8%);
+        color: white;
+        font-family: 'Epilogue';
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    #learn-more:hover {
+        border: 2px solid hsl(0, 0%, 8%);
+        cursor: pointer;
+        background-color: hsl(0, 0%, 100%);
+        color: black;
+
+    }
+
+
+    .trusted-by {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        padding-top: 105px;
+    }
+
+    .trusted-by img {
+        width: auto;
+        height: 30px;
+    }
+
+    .hero-image-area {
+        display: flex;
+
+    }
+
+    #hero-image {
+        width: auto;
+        height: 800px;
+    }
+
+    footer {
+        margin-top: 100%;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
