@@ -109,7 +109,7 @@
         top: 100px;
         gap: 15px;
         box-shadow: 1px 1px 15px -5px;
-        padding: 20px;
+        padding: 25px;
         border-radius: 10px;
         display: none;
     }
@@ -201,4 +201,157 @@
 
     .attribution a {
         color: hsl(228, 45%, 44%);
+    }
+
+    /*---------- Mobile-only menu -------*/
+    menu {
+        display: flex;
+        align-items: flex-start;
+        align-self: flex-end;
+        flex-direction: column;
+        position: fixed;
+        height: 100vh;
+        width: 220px;
+        max-width: 90vw;
+        background-color: white;
+        flex-direction: column;
+        z-index: 1000;
+        margin: 0;
+    }
+
+    #menu-logo {
+        display: none;
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .menu-nav {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+        margin-top: 50%;
+        gap: 25px;
+    }
+
+    .menu-nav a {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .mobile-menu[hidden] {
+        display: none;
+    }
+
+    .close-menu {
+        top: 35px;
+        display: block;
+        right: 22px;
+        position: absolute;
+    }
+
+    .darkerScreen::after {
+        position: absolute;
+        inset: 0;
+        background: #0007;
+        content: ''
+    }
+
+    #snap-mobile-logo {
+        display: none;
+    }
+
+    /*-------------------------------Query--------------------------------------*/
+    @media (max-width: 750px) {
+
+        .open-menu {
+            top: 35px;
+
+            display: block;
+            right: 22px;
+            position: absolute;
+        }
+
+        #snap-mobile-logo {
+            display: flex;
+        }
+
+        .main-nav {
+            display: none;
+        }
+
+        .login-nav {
+            display: none;
+        }
+
+        .logo img {
+            display: hidden;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .main-info-area {
+            order: 2;
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .hero-image-area {
+            order: 1;
+        }
+
+        main {
+            flex-direction: column;
+            gap: 50px;
+            justify-content: start;
+            margin-top: 50px;
+        }
+
+        #hero-image {
+            content: url("images/image-hero-mobile.png");
+            height: auto;
+            width: 100%;
+            max-width: 550px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        br {
+            display: none;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        #learn-more {
+            align-self: center;
+            height: 50px;
+        }
+
+        .trusted-by {
+            align-self: center;
+            max-width: 550px;
+            padding-top: 50px;
+        }
+
+        .trusted-by img {
+            width: auto;
+            height: 20px;
+        }
+
+        .attribution {
+            display: none;
+        }
     }

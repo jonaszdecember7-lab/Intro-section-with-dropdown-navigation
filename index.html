@@ -13,12 +13,54 @@
 
 <body>
 
+  <menu class="mobile-menu" hidden>
+    <div class="header-links">
+      <img src="images/icon-close-menu.svg" alt="menu-close" class="menu-icon close-menu">
+    </div>
+    <nav class="menu-nav">
+
+      <div class="dropdown-nav">
+        <button class="dropdown">
+          <span>Features</span>
+          <img src="images/icon-arrow-down.svg" class="down-arrow" alt="" aria-hidden="true">
+        </button>
+        <div class="dropdown-menu" id="features-menu">
+          <a href="#" class="dropdown-item"><img src="images/icon-todo.svg"> Todo List</a>
+          <a href="#" class="dropdown-item"><img src="images/icon-calendar.svg"> Calendar</a>
+          <a href="#" class="dropdown-item"><img src="images/icon-reminders.svg"> Reminders</a>
+          <a href="#" class="dropdown-item"><img src="images/icon-planning.svg"> Planning</a>
+        </div>
+      </div>
+
+      <div class="dropdown-nav">
+        <button class="dropdown">
+          <span>Company</span>
+          <img src="images/icon-arrow-down.svg" class="down-arrow" alt="" aria-hidden="true">
+        </button>
+        <div class="dropdown-menu">
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+
+      <a href="#">Careers</a>
+      <a href="#">About</a>
+    </nav>
+
+    <nav class="login-nav">
+      <a href="#">Login</a>
+      <a href="#" id="register">Register</a>
+    </nav>
+  </menu>
+
   <header>
+    <img src="images/logo.svg" alt="Snap LOGO" id="snap-mobile-logo">
+    <img src="images/icon-menu.svg" alt="menu-open" class="menu-icon open-menu hidden">
     <nav class="main-nav">
       <a href="/" class="logo">
         <img src="images/logo.svg" alt="Snap home">
       </a>
-
       <div class="dropdown-nav">
         <button class="dropdown">
           <span>Features</span>
