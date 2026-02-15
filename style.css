@@ -266,6 +266,26 @@
     }
 
     /*-------------------------------Query--------------------------------------*/
+
+    @media (max-width: 1100px) {
+        main {
+            gap: 60px;
+            padding: 0 40px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        #hero-image {
+            height: 600px;
+        }
+
+        .main-info-area {
+            max-width: 450px;
+        }
+    }
+
     @media (max-width: 750px) {
 
         .open-menu {
@@ -363,7 +383,7 @@
             max-width: 450px;
             width: 100%;
             padding-top: 50px;
-            
+
         }
 
         .trusted-by img {
