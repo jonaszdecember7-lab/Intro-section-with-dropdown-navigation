@@ -217,6 +217,7 @@
         flex-direction: column;
         z-index: 1000;
         margin: 0;
+
     }
 
     #menu-logo {
@@ -228,7 +229,7 @@
     }
 
     .menu-nav {
-        font-size: 30px;
+        font-size: 16px;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -237,10 +238,6 @@
         gap: 25px;
     }
 
-    .menu-nav a {
-        font-family: 'Josefin Sans', sans-serif;
-        font-weight: 300;
-    }
 
     .hidden {
         display: none;
@@ -278,6 +275,7 @@
             right: 22px;
             position: absolute;
         }
+
 
         #snap-mobile-logo {
             display: flex;
@@ -349,6 +347,37 @@
         .trusted-by img {
             width: auto;
             height: 20px;
+        }
+
+        .dropdown-menu {
+            display: flex;
+            position: static;
+            top: unset;
+            box-shadow: none;
+            padding: 10px 0;
+            border-radius: 0;
+            background: none;
+            display: none;
+            padding-left: 20px;
+            gap: 18px;
+            text-align: start;
+            margin-top: 13px;
+        }
+
+        #features-menu {
+            left: unset;
+        }
+
+        .dropdown {
+            width: 100%;
+            max-width: none;
+            text-align: left;
+            padding: 0;
+        }
+
+        a {
+            font-size: 16px;
+            font-weight: 500;
         }
 
         .attribution {
